@@ -1,11 +1,12 @@
 // Default style
 *{
 	@include border-box;
+	font-family: "NHaas", sans-serif;
 }
 
 body{
-	color: #dadada;
-	background-color: #202020;
+	color: #000;
+	background-color: #fff;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, section, div, nav, ul, li, button{
