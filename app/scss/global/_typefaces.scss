@@ -12,21 +12,29 @@
 .h1{
 	// font-family: "Founders", sans-serif;
 	font-family: "NHaas", sans-serif;
-	font-size: 10.8vw;
+	font-size: 12vw;
 	// font-size: 210px;
 	letter-spacing: -0.03em;
 	line-height: 0.9em;
 	@include smoothFont;
 	font-weight: lighter;
+
+	@include tablet {
+		font-size: 10.8vw;
+	}
 }
 
 .h2{
 	// font-family: "Founders", sans-serif;
 	font-family: "NHaas", sans-serif;
-	font-size: 6vw;
+	font-size: 8vw;
 	letter-spacing: -0.03em;
 	@include smoothFont;
 	font-weight: lighter;
+
+	@include tablet {
+		font-size: 6vw;
+	}
 }
 
 .p1{

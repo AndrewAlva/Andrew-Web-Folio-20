@@ -10,7 +10,7 @@
 
 #intro-section{
 	@include mobile {
-		padding-top: 20vw;
+		padding-top: 30vw;
 	}
 
 	padding-top: 10vw;
@@ -51,12 +51,48 @@
 		}
 	}
 
+	.not-mobile{
+		@include mobile {
+			display: none;
+		}
+	}
+
+
 	.offset-top{
-		margin-top: 5vw;
+		margin-top: 15vw;
 	}
 
 	.lift-top{
 		margin-top: -10vw;
+	}
+
+	.doublelift-top{
+		margin-top: -20vw;
+	}
+
+
+	.offset-top-mobile{
+		@include mobile {
+			margin-top: 25vw;
+		}
+	}
+
+	.halfoffset-top-mobile{
+		@include mobile {
+			margin-top: 12.5vw;
+		}
+	}
+
+	.doubleoffset-top-mobile{
+		@include mobile {
+			margin-top: 50vw;
+		}
+	}
+
+	.notlift-top-mobile{
+		@include mobile {
+			margin-top: 0;
+		}
 	}
 }
 
