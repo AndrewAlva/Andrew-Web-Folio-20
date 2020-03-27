@@ -1,6 +1,15 @@
 doctype html
 html(class='no-js' lang="en")
 	head
+		//- Global site tag (gtag.js) - Google Analytics
+		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-79153292-11")
+		script
+			|window.dataLayer = window.dataLayer || [];
+			|function gtag(){dataLayer.push(arguments);}
+			|gtag('js', new Date());
+
+			|gtag('config', 'UA-79153292-11');
+
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
 		meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, minimum-scale=1, width=device-width, height=device-height')
@@ -10,15 +19,26 @@ html(class='no-js' lang="en")
 
 		//- metatags
 		block google_metatags
-			meta(name='description', content='Page_description')
-			meta(name='subject', content='Page_subject')
+			meta(name='description', content="Freelance Creative Developer based in Mexico City, focused on developing brand's digital language using web technologies.")
+			meta(name='subject', content='Creative development, creative developer, web development, frontend development, frontend, front end, development')
 
 		//- Share graphs for social media
 		block og_metatags
-			meta(property="og:url" 			content="PLACE_YOUR_URL")
-			meta(property="og:title" 		content="PLACE_YOUR_TITLE")
-			meta(property="og:description" 	content="PLACE_YOUR_DESCRIPTION")
-			meta(property="og:image" 		content="PLACE_YOUR_IMAGE_URL")
+			//- Share graphs for social media
+			meta(property="og:url" 			content="https://andrew.studio/")
+			meta(property="og:type" 		content="website")
+			meta(property="og:title" 		content="Andrew Alva | Creative Developer")
+			meta(property="og:description" 	content="Freelance Creative Developer based in Mexico City, focused on developing brand's digital language using web technologies.")
+			meta(property="og:image" 		content="https://andrew.studio/share.jpg")
+			meta(name="twitter:card", content="summary")
+
+			link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
+			link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+			link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+			link(rel="manifest" href="/site.webmanifest")
+			link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+			meta(name="msapplication-TileColor" content="#da532c")
+			meta(name="theme-color" content="#ffffff")
 
 		//- Share graphs that doesn't change
 		meta(property="og:type" 		content="website")
