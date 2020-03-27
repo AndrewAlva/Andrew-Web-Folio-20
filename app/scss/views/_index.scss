@@ -48,6 +48,36 @@
 			position: relative;
 			vertical-align: top;
 			width: 100%;
+
+			@include laptop {
+				@include transitions-ease(.4s);
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+			}
+		}
+
+		&:after{
+			@include laptop {
+				pointer-events: none;
+				content: '';
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #f40;
+				mix-blend-mode: lighten;
+				opacity: 0;
+				@include transitions-ease(.7s);
+			}
+		}
+
+		&:hover{
+			img{
+				@include laptop {
+					-webkit-filter: grayscale(0%);
+					filter: grayscale(0%);
+				}
+			}
 		}
 	}
 
@@ -98,6 +128,11 @@
 
 
 #awards-section{
+	.offset-top-mobile{
+		@include mobile {
+			margin-top: 25vw;
+		}
+	}
 }
 
 
@@ -114,5 +149,15 @@
 		}
 
 		margin-bottom: 2.5vw;
+
+		a{
+			margin-bottom: 1.25vw;
+			display: inline-block;
+
+			@include mobile {
+				margin-bottom: 2.5vw;
+			}
+
+		}
 	}
 }

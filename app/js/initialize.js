@@ -16,13 +16,15 @@ function onWindowResize(){
     HalfHeight = MaxHeight / 2;
 }
 
+var PageSmoothScroll;
+
 // Trigger functions when the initial HTML document
 // has been completely loaded and parsed,
 // without waiting for stylesheets, images, and
 // subframes to finish loading
 document.addEventListener('DOMContentLoaded', function() {
     // Do something
-    RAF.init();
+    
 });
 
 
@@ -31,7 +33,6 @@ window.onload = function() {
     // Do something, remove preloader perhaps
     console.log("Page fully loaded.");
     console.log("Initialize.js");
-
 
     // parallax
     // DEBE ejecutarse aquí: después de terminar de cargar todas las imágenes
@@ -49,4 +50,11 @@ window.onload = function() {
             }
         })
     }
+
+    // Smooth scrolling
+    PageSmoothScroll = new SmoothScroll();
+    RAF.add(PageSmoothScroll);
+
+
+    RAF.init();
 }

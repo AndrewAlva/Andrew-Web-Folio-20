@@ -14,11 +14,45 @@ body, h1, h2, h3, h4, h5, h6, p, section, div, nav, ul, li, button{
 	padding: 0;
 }
 
-a{
+.a-link{
+	position: relative;
 	color: #f40;
 	text-decoration: none;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -0.6vw;
+		width: 100%;
+		height: 0.6vw;
+		background-color: #f40;
+
+		@include scale(0, 1);
+		@include transform-origin(left, center);
+		@include transitions-ease(.4s);
+
+		@include tablet {
+			bottom: -0.3vw;
+			height: 0.22vw;
+		}
+	}
+
+
+	&:hover{
+		@include laptop {
+			&:after{
+				@include scale(1.01,1);
+			}
+		}
+
+	}
 }
 
 ul, li {
 	list-style-type: none;
+}
+
+#main-wrapper{
+	overflow: hidden;
 }

@@ -3,18 +3,18 @@ var TWEEN=TWEEN||function(){var n=[];return{getAll:function(){return n},removeAl
 var RAF = {
     els: [],
     add: function(object) {
-    	this.els.push(object);
+        this.els.push(object);
+        object.init();
     },
     remove: function(object) {
-    	var idx = this.els.indexOf(object);
-    	this.els.splice(idx, 1);
+        var idx = this.els.indexOf(object);
+        this.els.splice(idx, 1);
     },
     init: function() {
         this.animate();
     },
     animate: function() {
         requestAnimationFrame(RAF.animate);
-        TWEEN.update();
         RAF.render();
     },
     render: function() {
