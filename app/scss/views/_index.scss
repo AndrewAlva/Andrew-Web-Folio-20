@@ -9,13 +9,31 @@
 }
 
 #intro-section{
+	@include mobile {
+		padding-top: 20vw;
+	}
+
 	padding-top: 10vw;
 
 	.description{
+		@include mobile {
+			margin-top: 10vw;
+		}
+
 		margin-top: 5vw;
 	}
 
+	.availability{
+		@include mobile {
+			margin-top: 5vw;
+		}
+	}
+
 	.cta{
+		@include mobile {
+			margin-top: 5vw;
+		}
+
 		margin-top: 2.5vw;
 	}
 }
@@ -48,9 +66,17 @@
 
 
 #social-section{
+	@include mobile {
+		padding-bottom: 10vw;
+	}
+
 	padding-bottom: 5vw;
 
 	.main-platform{
+		@include mobile {
+			margin-bottom: 5vw;
+		}
+
 		margin-bottom: 2.5vw;
 	}
 }
