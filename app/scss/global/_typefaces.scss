@@ -8,39 +8,22 @@
 		url("../fonts/NHaasGroteskTXPro-55Rg.svg#NHaasGroteskTXPro-55Rg") format("svg"); /* iOS 4.1- */
 }
 
-@font-face {
-	font-family: "NHaas M";
-	src: url("../fonts/NHaasGroteskTXPro-65Md.eot"); /* IE9*/
-	src: url("../fonts/NHaasGroteskTXPro-65Md.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		url("../fonts/NHaasGroteskTXPro-65Md.woff2") format("woff2"), /* chrome、firefox */
-		url("../fonts/NHaasGroteskTXPro-65Md.woff") format("woff"), /* chrome、firefox */
-		url("../fonts/NHaasGroteskTXPro-65Md.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-		url("../fonts/NHaasGroteskTXPro-65Md.svg#NHaasGroteskTXPro-65Md") format("svg"); /* iOS 4.1- */
-}
-
-@font-face {
-	font-family: "NHaas B";
-	src: url("../fonts/NHaasGroteskTXPro-75Bd.eot"); /* IE9*/
-	src: url("../fonts/NHaasGroteskTXPro-75Bd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		url("../fonts/NHaasGroteskTXPro-75Bd.woff2") format("woff2"), /* chrome、firefox */
-		url("../fonts/NHaasGroteskTXPro-75Bd.woff") format("woff"), /* chrome、firefox */
-		url("../fonts/NHaasGroteskTXPro-75Bd.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-		url("../fonts/NHaasGroteskTXPro-75Bd.svg#NHaasGroteskTXPro-75Bd") format("svg"); /* iOS 4.1- */
-}
-
 
 .h1{
+	// font-family: "Founders", sans-serif;
 	font-family: "NHaas", sans-serif;
-	font-size: 13vw;
+	font-size: 10.8vw;
 	// font-size: 210px;
 	letter-spacing: -0.03em;
+	line-height: 0.9em;
 	@include smoothFont;
 	font-weight: lighter;
 }
 
 .h2{
+	// font-family: "Founders", sans-serif;
 	font-family: "NHaas", sans-serif;
-	font-size: 8vw;
+	font-size: 6vw;
 	letter-spacing: -0.03em;
 	@include smoothFont;
 	font-weight: lighter;
@@ -48,11 +31,13 @@
 
 .p1{
 	font-family: "NHaas", sans-serif;
-	font-size: 34px;
+	font-size: 2.6vw;
+	line-height: 1.5em;
 }
 
 .p2{
 	font-family: "NHaas", sans-serif;
 	font-size: 18px;
+	line-height: 1.5em;
 	letter-spacing: 0;
 }

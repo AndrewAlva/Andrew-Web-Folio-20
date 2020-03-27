@@ -1,0 +1,48 @@
+.home-sections-wrapper{
+	.title{
+		margin-bottom: 5vw;
+	}
+
+	.inner-sections{
+		padding-bottom: 15vw;
+	}
+}
+
+#intro-section{
+	padding-top: 10vw;
+
+	.description{
+		margin-top: 5vw;
+	}
+
+	.cta{
+		margin-top: 2.5vw;
+	}
+}
+
+
+#projects-section{
+	.img-holder{
+		position: relative;
+		width: 100%;
+
+		img{
+			position: relative;
+			vertical-align: top;
+			width: 100%;
+		}
+	}
+}
+
+
+#awards-section{
+}
+
+
+#social-section{
+	padding-bottom: 5vw;
+
+	.main-platform{
+		margin-bottom: 2.5vw;
+	}
+}
